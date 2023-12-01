@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+
+    .left {
+        width: 70%;
+
+        .bottom {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            height: 35vh;
+
+            .img-container {
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                img {
+                    width: 150%;
+                }
+            }
+
+            .content {
+                width: 70%;
+                overflow: hidden;
+                display: flex;
+
+                .philosophy {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 2em 1em;
+                    padding-right: 2em;
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+
+                        .square {
+                            position: absolute;
+                            width: 25px;
+                            height: 25px;
+                            background-color: yellow;
+                            left: -1em;
+                        }
+
+                        h1 {
+                            margin-left: 1em;
+                        }
+
+                    }
+
+                    p {
+                        margin-left:3em;
+                        font-size: 12px;
+                        text-align: justify;
+                    }
+
+                    a {
+                        justify-self: flex-end;
+                        display: flex;
+                        text-decoration: none;
+                        color: black;
+                        margin-top: 1em;
+
+                        margin-left: 2em;
+                        img {
+                            width: 5%;
+                            margin-left: 1em;
+                        }
+                    }
+                }
+
+                .img-container {
+                    width: 50%;
+
+                    img {
+
+                        width: 130%;
+                    }
+                }
+            }
+        }
+
+        .top {
+            background-color: black;
+            color: white;
+            padding: 2em 3em;
+            height: 65vh;
+            position: relative;
+
+            nav {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+
+                    li+li {
+                        margin-left: 1em;
+                    }
+                }
+
+                .logo {
+                    display: flex;
+
+                    h1+h1 {
+                        color: rgb(233, 233, 0);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .title {
+                position: relative;
+                margin-top: 2em;
+
+                h1 {
+                    font-size: 6em;
+                    position: absolute;
+                    width: 100%;
+                    font-weight: 500;
+                }
+
+                h1:first-child {
+                    color: yellow;
+                }
+
+                h1:nth-child(2) {
+                    top: 1em;
+                    left: 2em;
+                }
+
+                h1:nth-child(3) {
+                    left: 6em;
+                    top: 2em;
+                }
+            }
+
+            display: flex;
+            flex-direction: column;
+
+            button {
+                position: absolute;
+                bottom: 2em;
+                padding: .5em 1em;
+
+            }
+        }
+
+
+    }
+
+    .right {
+        width: 30%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        .img-container {
+            width: 100%;
+            height: 75vh;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .cards {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+
+            .card {
+                width: 50%;
+                height: 25vh;
+                padding: 1em;
+                position: relative;
+
+                h1 {
+                    font-weight: 500;
+                    font-size: 4em;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                a {
+                    justify-self: flex-end;
+                    display: flex;
+                    text-decoration: none;
+                    color: black;
+                    position: absolute;
+                    bottom: 1em;
+
+                    img {
+                        width: 10%;
+                        margin-left: .5em;
+                    }
+                }
+            }
+
+            .card+.card {
+                background-color: yellow;
+            }
+        }
+    }
+}
